@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="GOPATH &lt;go-testing-benchmarking&gt;">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../go-what-know/pkg/src/golang.org" />
+      <root url="file://$PROJECT_DIR$/../go-what-know/pkg/src/github.com" />
+      <root url="file://$PROJECT_DIR$/../go-what-know/pkg/src/stringutil" />
+    </CLASSES>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../go-what-know/pkg/src/golang.org" />
+      <root url="file://$PROJECT_DIR$/../go-what-know/pkg/src/github.com" />
+      <root url="file://$PROJECT_DIR$/../go-what-know/pkg/src/stringutil" />
+    </SOURCES>
+    <excluded>
+      <root url="file://$PROJECT_DIR$" />
+    </excluded>
+  </library>
+</component>
