@@ -10,6 +10,7 @@ import (
 )
 
 func TestRemote(t *testing.T){
+	render("file.html")
 	t.Error("Error occured")
 }
 
