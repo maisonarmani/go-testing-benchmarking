@@ -4,8 +4,7 @@ golang:
   # all version of golang
   - master
 
-go_import_path:
-  - ./pkg
+go_import_path: ./pkg
 
 install: true
 

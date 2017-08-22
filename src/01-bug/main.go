@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"github.com/labstack/gommon/log"
 	"io"
 	"text/template"
 )
@@ -50,7 +49,7 @@ func render(view string, data ...interface{}) (func(writer io.Writer), error) {
 			tmp.Execute(w, data)
 		}, nil
 	} else {
-		log.Debug(err.Error())
+		fmt.Errorf(err.Error())
 		return nil, err
 	}
 }
