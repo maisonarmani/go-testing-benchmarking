@@ -1,0 +1,8 @@
+language: go
+
+golang:
+  # all version of golang
+  - master
+
+go_import_path:
+  -
