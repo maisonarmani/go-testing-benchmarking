@@ -5,4 +5,10 @@ golang:
   - master
 
 go_import_path:
-  -
+  - ./pkg
+
+install: true
+
+script:
+  - go test ./src/01-bug -v
+
