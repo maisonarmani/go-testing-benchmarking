@@ -8,6 +8,7 @@ go_import_path: ./packages
 
 install:
   - go get -u github.com/jinzhu/gorm
+  - go get -u github.com/mattn/go-sqlite3
 
 script:
   - go test ./src/01-bug -v
