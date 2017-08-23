@@ -1,0 +1,6 @@
+{
+  "includes": [
+    "github.com/jinzhu/gorm",
+    "github.com/mattn/go-sqlite3"
+  ]
+}

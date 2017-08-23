@@ -52,3 +52,8 @@ func TestBug(t *testing.T) {
 func TestTemplate(t *testing.T) {
 	templater()
 }
+
+
+func TestDB(t *testing.T){
+	usingGORM();
+}

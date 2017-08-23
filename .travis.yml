@@ -4,9 +4,10 @@ golang:
   # all version of golang
   - master
 
-go_import_path: ./pkg
+go_import_path: ./packages
 
-install: true
+install:
+  - go get -u github.com/jinzhu/gorm
 
 script:
   - go test ./src/01-bug -v
