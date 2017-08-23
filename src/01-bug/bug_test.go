@@ -2,14 +2,13 @@ package main
 
 import (
 	"fmt"
-	"github.com/labstack/gommon/log"
 	"io/ioutil"
 	"net/http"
 	"net/http/httptest"
 	"testing"
 )
 
-func TestRemote(t *testing.T){
+func TestRemote(t *testing.T) {
 	render("file.html")
 	t.Error("Error occured")
 }
@@ -38,12 +37,12 @@ func TestBug(t *testing.T) {
 
 	res, err := http.Get(server.URL)
 	if err != nil {
-		log.Panic(err.Error())
+		t.Errorf(err.Error())
 	}
 	greeting, err := ioutil.ReadAll(res.Body)
 	res.Body.Close()
 	if err != nil {
-		log.Panic(err.Error())
+		t.Errorf(err.Error())
 	}
 
 	fmt.Println("%s", greeting)
